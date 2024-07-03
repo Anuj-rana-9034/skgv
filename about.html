@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+     <!-- navbar -->
+     <div>
+        <nav class="bg-white border-gray-200">
+          <div
+            class="flex sm:justify-between sm:items-center mx-auto max-w-screen-xl sm:px-14 p-4"
+          >
+            <a href="" class="flex items-center space-x-3 rtl:space-x-reverse">
+              <img src="images/logo2.png" class="h-12 sm:w-16 w-24" alt="" />
+            </a>
+            <div class="flex items-center space-x-6 rtl:space-x-reverse">
+              <h2 class="sm:text-2xl sm:px-52 px-7 text-sm font-bold text-center">
+                Shree Krishan Gopal Sarv Karamchari Vitt Sarthi Gaumata Seva
+                Charitable Trust
+              </h2>
+            </div>
+            <div>
+              <a
+                href="#"
+                class="relative sm:mt-0 mt-2 inline-flex items-center justify-center sm:h-12 sm:w-20 w-14 h-10 overflow-hidden font-mono font-medium tracking-tighter text-white bg-[#1F2937] bg-green-500 rounded-lg group"
+              >
+                <span
+                  class="absolute w-0 h-0 transition-all duration-500 ease-out bg-[#1F2937] rounded-full group-hover:w-56 group-hover:h-56"
+                ></span>
+                <span
+                  class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"
+                ></span>
+                <span class="relative sm:text-[14px] text-[12px]">Contact</span>
+              </a>
+            </div>
+          </div>
+        </nav>
+        <nav class="bg-gray-50 dark:bg-gray-700">
+          <div class="max-w-screen-xl px-4 py-3 mx-auto">
+            <div class="flex justify-between sm:px-16">
+              <ul
+                class="flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm"
+              >
+                <li>
+                  <a
+                    href="index.php"
+                    class="text-gray-900 dark:text-white hover:text-[#22c55e] hover:underline"
+                    aria-current="page"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="about.html"
+                    class="text-gray-900 dark:text-white hover:text-[#22c55e] hover:underline"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="index.php#membership"
+                    class="text-gray-900 dark:text-white hover:text-[#22c55e] hover:underline"
+                    >Membership</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="index.php#services-card"
+                    class="text-gray-900 dark:text-white hover:text-[#22c55e] hover:underline"
+                    >Services</a
+                  >
+                </li>
+              </ul>
+              <button class="btn" id="open-sidebar">
+                <svg
+                  class="w-6 text-white h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 448 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    
+                    d="M0 80C0 53.5 21.5 32 48 32h96c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80zM64 96v64h64V96H64zM0 336c0-26.5 21.5-48 48-48h96c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V336zm64 16v64h64V352H64zM304 32h96c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H304c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48zm80 64H320v64h64V96zM256 304c0-8.8 7.2-16 16-16h64c8.8 0 16 7.2 16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s7.2-16 16-16s16 7.2 16 16v96c0 8.8-7.2 16-16 16H368c-8.8 0-16-7.2-16-16s-7.2-16-16-16s-16 7.2-16 16v64c0 8.8-7.2 16-16 16H272c-8.8 0-16-7.2-16-16V304zM368 480a16 16 0 1 1 0-32 16 16 0 1 1 0 32zm64 0a16 16 0 1 1 0-32 16 16 0 1 1 0 32z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!--  -->
+      <div class="bg-gray-100">
+        <div class="">
+          <!-- Sidebar -->
+          <div
+            class="relative z-30 h-2 bg-gray-800 text-white w-56 min-h-[300px] overflow-y-auto transition-transform transform -translate-x-full ease-in-out duration-300"
+            id="sidebar"
+          >
+            <!-- Your Sidebar Content -->
+            <div class="p-4">
+              <h1 class="text-xl mb-7 font-semibold">Donate with Qr Code</h1>
+              <div>
+                <img src="images/qrcode.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+    </div>  
+    <!-- about -->
+    <div class="bg-[#F3F4F6] px-4 pb-6">
+        <h3 class="-mt-[300px] text-[#22C55E] sm:text-2xl text-[17px] sm:text-start text-center  py-4 font-bold ">About "Sri Krishna Gopal Sarvkaramchari Vitt Sarthi Gaumata Sewa Charitable Trust, Panipat (Regd.
+            No. 3572)
+            </h3>
+        <p class="sm:text-[16px] font-semibold text-justify">In this regard, it is brought to your kind knowledge that "Sri Krishna Gopal Sarvkaramchari Vitt Sarthi Gau Sewa Charitable Trust, Panipat (Regd. No. 3572)" has been got registered on 13.07.2022 with the cooperation of the employees to help or to donate the "Gaushala" and also working for prevention of the cruelty against the stray animals or birds. For this, it has been decided to collect one rupee per day means Rs. 30 per month from all the officials /officers of Haryana Roadways, Panipat on purely voluntarily basis. The above collection is being used to help the pathetic condition of the "Gau Mata" or develop the Gaushala and also preservation and welfare of stray animals and birds. And further it is also submitted that many social workers, employees and officers of the other Department are also joining and cooperating the above society. As such, approximately 1000 members have joined the "Sri Krishna Gopal Sarvkaramchari Vitt Sarthi Gau Sewa Charitable Trust, Panipat" till now. And further it is also submitted that total donation of Rs.
+            280000/- has been received in this society till now and approximately Rs.200000/- donated in the various Gaushalas for feed/Chara and medicines purpose.</p>
+    </div>
+    
+
+
+    <!--  -->
+    <!-- component -->
+<section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12">
+  <div class="text-center pb-12">
+     
+      <h1 class="font-bold text-3xl md:text-4xl lg:text-5xl font-heading text-gray-900">
+          Team Members
+      </h1>
+  </div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="w-full bg-white rounded-lg flex flex-col justify-center items-center">
+          <div class="mb-8">
+              <img class="object-center object-cover  " src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="photo">
+          </div>
+          <div class="text-center">
+              <p class="text-xl text-gray-700 font-bold mb-2">Dany Bailey</p>
+              <p class="text-base text-gray-400 mb-2 font-normal">Software Engineer</p>
+          </div>
+      </div>
+      <div class="w-full bg-white rounded-lg  flex flex-col justify-center items-center">
+          <div class="mb-8">
+              <img class="object-center object-cover " src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="photo">
+          </div>
+          <div class="text-center">
+              <p class="text-xl text-gray-700 font-bold mb-2">Lucy Carter</p>
+              <p class="text-base text-gray-400 mb-2 font-normal">Graphic Designer</p>
+          </div>
+      </div>
+      <div class="w-full bg-white rounded-lg  flex flex-col justify-center items-center">
+          <div class="mb-8">
+              <img class="object-center object-cover" src="https://images.unsplash.com/photo-1499952127939-9bbf5af6c51c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1176&q=80" alt="photo">
+          </div>
+          <div class="text-center">
+              <p class="text-xl text-gray-700 font-bold mb-2">Jade Bradley</p>
+              <p class="text-base text-gray-400 mb-2 font-normal">Dev Ops</p>
+          </div>
+      </div>
+      <div class="w-full bg-white rounded-lg  flex flex-col justify-center items-center">
+          <div class="mb-8">
+              <img class="object-center object-cover" src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="photo">
+          </div>
+          <div class="text-center">
+              <p class="text-xl text-gray-700 font-bold mb-2">Dany Bailey</p>
+              <p class="text-base text-gray-400 mb-2 font-normal">Software Engineer</p>
+          </div>
+      </div>
+      <div class="w-full bg-white rounded-lg flex flex-col justify-center items-center">
+          <div class="mb-8">
+              <img class="object-center object-cover " src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="photo">
+          </div>
+          <div class="text-center">
+              <p class="text-xl text-gray-700 font-bold mb-2">Lucy Carter</p>
+              <p class="text-base text-gray-400 mb-2 font-normal">Graphic Designer</p>
+          </div>
+      </div>
+      <div class="w-full bg-white rounded-lg  flex flex-col justify-center items-center">
+          <div class="mb-8">
+              <img class="object-center object-cover" src="https://images.unsplash.com/photo-1499952127939-9bbf5af6c51c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1176&q=80" alt="photo">
+          </div>
+          <div class="text-center">
+              <p class="text-xl text-gray-700 font-bold mb-2">Jade Bradley</p>
+              <p class="text-base text-gray-400 mb-2 font-normal">Dev Ops</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!--  -->
+ <!-- footer -->
+ <footer class="bg-[#F3F4F6]">
+  <div
+    class="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8"
+  >
+    <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+      <div>
+        <div class="text-teal-600">
+          <img src="images/logo2.png" class="h-28 -mt-10" alt="" />
+        </div>
+
+        <p class="mt-4 max-w-xs text-gray-500">
+          We’re curious, passionate, and committed to helping nonprofits
+          learn and grow. Donate now!
+        </p>
+
+        <ul class="mt-8 flex gap-6">
+          <li>
+            <a
+              href="#"
+              rel="noreferrer"
+              target="_blank"
+              class="text-gray-700 transition hover:text-[#22C55E]"
+            >
+              <span class="sr-only">Facebook</span>
+
+              <svg
+                class="h-6 w-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#"
+              rel="noreferrer"
+              target="_blank"
+              class="text-gray-700 transition hover:text-[#22C55E]"
+            >
+              <span class="sr-only">Instagram</span>
+
+              <svg
+                class="h-6 w-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#"
+              rel="noreferrer"
+              target="_blank"
+              class="text-gray-700 transition hover:text-[#22C55E]"
+            >
+              <span class="sr-only">Twitter</span>
+
+              <svg
+                class="h-6 w-6"
+                fill="currentColor"
+                viewBox="0 0 576 512"
+                aria-hidden="true"
+              >
+                <path
+                  d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              rel="noreferrer"
+              target="_blank"
+              class="text-gray-700 transition hover:text-[#22C55E]"
+            >
+              <span class="sr-only">Twitter</span>
+
+              <svg
+                class="h-5 w-5"
+                fill="currentColor"
+                viewBox="0 0 488 512"
+                aria-hidden="true"
+              >
+                <path
+                  d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div
+        class="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4"
+      >
+        <div>
+          <p class="font-bold text-gray-900">Office Hours</p>
+
+          <ul class="mt-6 space-y-4 text-sm">
+            <li>
+              <a
+                href="#"
+                class="text-gray-700 text-[15px] hover:text-[#22C55E] font-semibold transition hover:opacity-75"
+              >
+                (Monday to Saturday) <br />9:00am to 5:00pm
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#"
+                class="text-gray-700 transition text-[15px] hover:text-[#22C55E] font-semibold"
+                >(Sunday off)</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="font-bold text-gray-900">Usefull Links</p>
+
+          <ul class="mt-6 space-y-4 text-sm">
+            <li>
+              <a
+                href="#objectives"
+                class="text-gray-700 transition text-[15px] hover:text-[#22C55E] font-semibold"
+              >
+                Objectives
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#services-card"
+                class="text-gray-700 transition text-[15px] hover:text-[#22C55E] font-semibold"
+              >
+                Services
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#membership"
+                class="text-gray-700 transition text-[15px] hover:text-[#22C55E] font-semibold"
+              >
+                Membership
+              </a>
+            </li>
+            <li>
+              <a
+                href="#donate"
+                class="text-gray-700 transition text-[15px] hover:text-[#22C55E] font-semibold"
+              >
+                Donate
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="font-bold text-gray-900">Contact</p>
+
+          <ul class="mt-6 space-y-4 text-sm">
+            <li>
+              <a
+                href="#"
+                class="text-gray-700 transition text-[15px] hover:text-[#22C55E] font-semibold"
+              >
+                <i class="fa-solid fa-location-dot"></i> Gurjar Bhavan
+                Sec.24 Near Ujha Road, Panipat
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#"
+                class="text-gray-700 transition text-[15px] hover:text-[#22C55E] font-semibold"
+                ><i class="fa-solid fa-envelope"></i>skgvsarthi@gmail.com</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="#"
+                class="text-gray-700 transition text-[15px] hover:text-[#22C55E] font-semibold"
+                ><i class="fa-solid fa-phone"></i> +91 9729325440
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <p class="text-xs text-gray-500">
+      &copy; 2024. SKGV SARTHI . All rights reserved.
+    </p>
+  </div>
+</footer>
+    
+    <script>
+        const sidebar = document.getElementById("sidebar");
+        const openSidebarButton = document.getElementById("open-sidebar");
+  
+        openSidebarButton.addEventListener("click", (e) => {
+          e.stopPropagation();
+          sidebar.classList.toggle("-translate-x-full");
+        });
+  
+        // Close the sidebar when clicking outside of it
+        document.addEventListener("click", (e) => {
+          if (
+            !sidebar.contains(e.target) &&
+            !openSidebarButton.contains(e.target)
+          ) {
+            sidebar.classList.add("-translate-x-full");
+          }
+        });
+      </script>
+</body>
+</html>
